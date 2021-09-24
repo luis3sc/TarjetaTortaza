@@ -18,13 +18,15 @@ h1, h2{
 h1{
   font-size: 1.9em;
   font-weight: 700;
+  padding: 4%;
 }
 h2{
   font-size: 1.6em;
 }
 .demo{
     width: 100%;
-    height: 100vh; 
+    float: left;
+    padding: 6% 0 6% 0;
 }
 
 .navbar {
@@ -283,10 +285,7 @@ h2{
   object-fit: cover;
 }
 
-.demo{
-  height: 100vh;
-}
-address, .torta{
+.torta{
   width: 44%;
   float: left;
   padding: 20px;
@@ -296,4 +295,20 @@ address, .torta{
 }
 .torta img{
   width: 100%;
+}
+
+address {
+  padding: 1% 4%;
+}
+
+.boton-contacto{
+  padding: 4%;
+  width: 92%;
+  margin-top: 4%;
+}
+
+#contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

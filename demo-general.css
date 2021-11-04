@@ -1,0 +1,599 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding:0px;
+  }
+h1,h2{
+    text-transform: uppercase;
+  }
+h1{
+  font-size: 1.2em;
+  text-align: center
+}
+h2{
+  font-size: 1.1em;
+}
+:root{
+    --primero: yellow;
+    --segundo: #200d07;
+    --tercero:  red;
+}
+.black{
+  color: var(--segundo) !important;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.ama{
+    background-color: var(--primero);
+    color: var(--segundo);
+}
+.rojo{
+    background-color: var(--tercero);
+    color: white;
+}
+.regresar{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: var(--primero);
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    z-index: 2;
+      padding: 3.5%;
+      flex-wrap: wrap;
+  }
+.navbar-u{
+  position: fixed;
+  bottom: 0px;
+}
+a{
+  text-decoration: none;
+}
+.h-95{
+  height: 95px;
+}
+.h-8{
+  height: 8%;
+}
+.h-130{
+  height: 22%;
+}
+  .gap-2{
+    gap:3%;
+  }
+  .gap-m{
+    column-gap: 3%;
+    row-gap: 13%;
+  }
+.boton-cuadrado{
+    width: 22.5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      list-style: none;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 20px;
+  }
+  .wmd{
+    width: 48.5%;
+    border-radius: 20px;
+    float: left;
+  }
+  .wct{
+    width: 100%;
+    border-radius: 20px;
+  }
+  .flex-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .siguenos{
+    width: 100%;
+    height: 11%;
+  }
+    .circle {
+      position: fixed;
+      right: 2%;
+      /*transform: translateX(-50%);*/
+      bottom: 235px;   
+      margin-bottom: 0;
+      height: 50px;
+      width: 50px;
+     border-radius: 50%;
+     
+      overflow: hidden;
+      z-index: 2;
+      background-color: #ffffff;
+      transition: height 0.3s;
+
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    
+    .circle .social {
+      position: absolute;
+      top: 195px;
+      color: white;
+      background-color: rgba(255, 212, 212, 0.308);
+      height: 60px;
+      width: 60px;
+      margin-bottom: 5px;
+      font-size: 25px;
+      cursor: pointer;
+    }
+    
+    .icon-home,
+    .icon-settings {
+      font-size: 29px;
+      color: #fdc0df;
+    }
+    
+    .fas, .fab, .far{
+        font-size: 20px;
+    }
+    .pri{
+      color: #200d07;
+    }
+    .sec{
+      color: #ffffff;
+    }
+    .fa-whatsapp:before{
+        font-size: 130% !important;
+    }
+    .fas:hover, .fas:active, .fas:visited{
+        background-color: #200d07;
+        color: #ffffff;
+    }
+      .popup {
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        left: 0;
+        top: 0;
+        background-color: rgb(0 0 0 / 82%);
+        transform: scale(0);
+        opacity: 0;
+        visibility: hidden;
+      }
+      .popup:target {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+        width: 100%;
+      }
+      .popup__close {
+        text-decoration: none;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: white;
+        position: fixed;
+        top: 20px;
+        right: 3%;
+        width: 40px;
+        height: 40px;
+        z-index: 2;
+        display: flex;
+        background-color: red;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+      }
+      .popup__close:hover {
+        color: white;
+      }
+  
+  
+    /* seccion 1*/
+  
+   @keyframes lava {
+      0% {
+        background-position-y: 300px;
+        background-position-x: -900px;
+      }
+      50% {
+        background-position-y: 350px;
+        background-position-x: -1400px;
+      }
+      100% {
+        background-position-y: 300px;
+        background-position-x: -900px;
+      }
+    }
+    .portada{
+      width:100vw;
+      height: 100vh;
+      box-sizing: border-box;
+      background-image:url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1600 198' style='enable-background:new 0 0 1600 198;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill-rule:evenodd;clip-rule:evenodd;%7d %3c/style%3e%3cpath class='st0' d='M1600,121C1289,121,1190.1-0.2,789,0C389,0,289,121,0,121v77h1600C1600,198,1600,150,1600,121z'/%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-size: 850%;
+      animation: lava 5s ease-in-out -.125s infinite;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: flex-start;
+    }
+    .fondo-ma{
+      width: 100%;
+      height: 93%;
+      position: absolute;
+      background-image: url(fondo.jpg);
+      background-size: cover;
+      z-index: -1;
+    }
+    .enc{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+      padding: 10px;
+    }
+    .demo{
+      width: 100%;
+      float: left;
+      padding: 6% 0 6% 0;
+  }
+  
+    .enc img{
+      width: 75%;
+    }
+    .op{
+    color: white;   
+    }
+    /* swiper */
+    .swiper {
+      box-sizing: border-box;
+    }
+    
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+    
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    
+    .swiper-slide img {
+      display: block;
+      width: 75%;
+      object-fit: cover;
+    }
+  
+  .pd20{
+    padding: 5%;
+  }  
+  .enc a{
+      display: flex;
+    }
+    .enc a{
+      width: 16%;
+    }
+
+    .dcata{
+      width: 92%;
+      position: fixed;
+      padding: 2%;
+      bottom: 100px;
+      height: 90px;
+      background-color: #ffff00;
+      border-radius: 20px;
+    }
+    .cont{
+      float: left;
+      width: 50%;
+      height: 100%;
+      background-size: 100%;
+      padding: 0;
+      border-radius:20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .cont img{
+      width: 100%;
+    }
+    .titulo{
+      height: 5%;
+    }
+    .tienda-contenido{
+      height: 95%;
+      background:aliceblue;
+      overflow-y: scroll;
+      display:flex;
+      flex-wrap: wrap;
+      row-gap: 2%;
+      column-gap: 5%;
+      align-content: flex-start;
+    }
+    .torta{
+      width: 100%;
+      background:#ededed;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .torta-c{
+      width: 50%;
+      padding: 8px;
+    }
+    .torta-titulo{
+      font-size: 12pt;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .torta-c img{
+      width: 100%;
+    }
+    .texto-servicio{
+      width: 100%;
+      height: 50px;
+    }
+    .servicios{
+      width: 47%;
+      height: 38%;
+    }
+    .servicios img{
+      width: 100%;
+    }
+    .iconosocial{
+      width: 80% !important;
+      padding: 7px;
+      box-sizing: content-box;
+      background: yellow;
+      border-radius: 50%;
+    }
+    #instagram{
+      background-color: #833AB4;
+    }
+    #whatsapp{
+      background: #0b9400 !important;
+    }
+    #twitter{
+      background-color: #55acee !important;
+    }
+    #twitch{
+      background-color: #6441a5;
+    }
+    #telegram{
+      background-color: #38aee4;
+    }
+    #facebook{
+      background: #0077c8 !important;
+    }
+    #skype{
+      background-color: #00aff0;
+    }
+    #mensaje{
+      background-color: rgb(143, 143, 143);
+    }
+    #linkedin{
+      background-color:#0e76a8 ;
+    }
+    #pinterest{
+      background-color: #d43f3a;
+    }
+    #tumblr{
+      background-color: #34526f;
+    }
+    #reddit{
+      background-color: #FF4301;
+    }
+    #discord{
+      background-color: #7289da;
+    }
+    #soundcloud{
+      background-color: #ff7700;
+    }
+    #snapchat{
+      background-color: #FFFC00;
+    }
+    #dribbble{
+      background-color: #ea4c89;
+    }
+    #github{
+      background-color: #4078c0;
+    }
+    .ic-social:before {
+      font-size: 130% !important;
+    }
+    .ic-social{
+      padding: 13px;
+      border-radius: 50px;
+    }
+    .ico{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+  .m10{
+    padding-top: 10px;
+  }  
+    address {
+      padding: 2% 4%;
+    }
+    #ubi{
+      background-color: #200d07;
+      color: #ffffff;
+    }
+    .boton-contacto-social{
+      width: 60px;
+      /*margin-top: 4%;*/
+      color: #000000;
+      text-transform: uppercase;
+      font-size: 8pt;
+      gap: 10px;
+      border: none;
+      font-weight: bolder;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .boton-contacto{
+      padding: 4%;
+      width: 100%;
+      margin-top: 4%;
+      color: #ffffff;
+      text-transform: uppercase;
+      border-radius: 15px;
+      font-size: 92%;
+      border: none;
+      font-weight: bolder;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      column-gap: 15px;
+    }
+    .ic{
+      width: 7% !important;
+    }
+    
+    #contacto{
+      display: flex;
+      padding: 4%;
+      flex-direction: column;
+      align-items: center;
+      background-color: yellow;
+    }
+    
+    .mapa{
+      width: 100%;
+      padding: 4% 0;
+      height: 500px;
+    }
+    
+  #contacto img{
+    padding-bottom: 40px;
+    width: 85%;
+  }
+  
+  .pad{
+    width: 100%;
+    height: 80px;
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #nostros p{  
+    padding: 4%;
+  }
+  
+  .pd3{
+    padding: 3%;
+  }
+  .pd{
+    padding: 6%;
+  }
+  .gr{
+  
+    background: rgb(233, 233, 233);
+  }
+  hr{
+    width: 50%;
+    border: 2px solid #200d07;
+  }
+  .contenedor-ad{
+    margin:5% auto;
+    border-radius: 20px;
+  }
+  .container-wrapper {
+      position: relative;
+      width: 100%;
+    height: 100%;
+      overflow: hidden;
+    background-color: rgb(255, 255, 255);
+  }
+  /* CSS Tab styling is start here */
+      /* Tab menu styling*/
+      input.tab-menu-radio {
+          display: none;
+      }
+      label.tab-menu {
+          display: inline-block;
+          padding:10px 0px;
+          cursor: pointer;
+          z-index: 99;
+      width:49%;
+      text-align:center;
+      }
+      /* End Tab menu styling*/
+      /* Tab content styling*/
+            .tab-content {
+          clear: both;
+          width: 100%;
+          position: relative;
+          padding:5px 20px;
+      }	
+      .centrom{
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 14px;
+        row-gap: 20px;
+      }
+      /* End Tab content styling*/
+      /* CSS tab core */
+          .tab-menu-radio:checked + label {
+              -webkit-transition:all 1s; /* Optional */
+              -moz-transition:all 1s; /* Optional */
+              transition:all 1s; /* Optional */
+        border-bottom: 4px solid red;
+              color: #000;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+          }
+          .tab-content .tab {
+              height: 0;
+              opacity: 0;
+          }
+          #tab-menu1:checked ~ .tab-content .tab-1,
+          #tab-menu2:checked ~ .tab-content .tab-2,
+          #tab-menu3:checked ~ .tab-content .tab-3 {
+              -webkit-transition:opacity 1s; /* Optional */
+              -moz-transition:opacity 1s; /* Optional */
+              transition:opacity 1s; /* Optional */
+              height: auto;
+              opacity: 1;
+          }
+      /* End CSS tab core */
+  /* CSS Tab Styling is end here */

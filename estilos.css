@@ -13,9 +13,12 @@ body {
 }
 .bl{
   color: #ffffff;
+  position: absolute;
+  bottom: 80px;
 }
 h1, h2{
   text-transform: uppercase;
+  ;
 }
 h1{
   font-size: 1.3em;
@@ -24,6 +27,8 @@ h1{
 }
 h2{
   font-size: 1.1em;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 .demo{
     width: 100%;
@@ -50,7 +55,7 @@ h2{
   margin-bottom: 0;
   height: 55px;
   width: 13%;
- /* border-radius: 40px;*/
+ border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,10 +68,11 @@ h2{
 
 .circle:hover {
   height: 330px;
+  border-radius: 0%;
+   background: none;
 }
 
 .circle .plus-icon {
-  color: #200d07;
   font-size: 27px;
   transition: opacity 0.3s, transform 0.2s;
 }
@@ -84,9 +90,6 @@ h2{
   height: 60px;
   width: 60px;
   margin-bottom: 5px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   font-size: 25px;
   cursor: pointer;
 }
@@ -113,29 +116,39 @@ h2{
   margin-bottom: 0px;
 }
 
+
 .circle:hover .social:nth-child(2) {
   opacity: 1;
-  top: 5px;
+  top: 20px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 60px 60px 0px 0px;
 }
 
 .circle:hover .social:nth-child(3) {
   opacity: 1;
-  top: calc(5px + 60px + 5px);
+  background: #ffffff;
+  top: calc(5px + 60px + 15px);
 }
 
 .circle:hover .social:nth-child(4) {
   opacity: 1;
-  top: calc(5px + 60px + 5px + 60px + 5px);
+  background: #ffffff;
+  top: calc(5px + 60px + 5px + 60px + 10px);
 }
 
 .circle:hover .social:nth-child(5) {
     opacity: 1;
+    background: #ffffff;
     top: calc(5px + 60px + 5px + 60px + 5px + 60px + 5px);
   }
 
   .circle:hover .social:nth-child(6) {
+    background: #ffffff;
     opacity: 1;
-    top: calc(5px + 60px + 5px + 60px + 5px + 60px + 5px + 60px + 5px);
+    border-radius: 0 0 60px 60px;
+    width: 100%;
+    top: calc(5px + 60px + 5px + 60px + 5px + 60px + 5px + 60px + 0px);
   }
 
 .circleBackground {
@@ -256,17 +269,14 @@ h2{
   width: 100%;
   height: 93%;
   position: absolute;
-  background-image: url(fondo.webp);
+  background-image: url(fondo.jpg);
   background-size: cover;
   z-index: -1;
 }
 .enc{
   display: flex;
-  height: 27%;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
 }
 .enc img{
   width: 75%;
@@ -389,13 +399,14 @@ hr{
   display: flex;
 }
 .enc a{
-  width: 12%;
+  width: 16%;
 }
 .iconosocial{
   width: 80% !important;
-  padding: 10px;
+  padding: 7px;
   box-sizing: content-box;
   background: yellow;
+  border-radius: 50%;
 }
 #whatsapp{
   background: #0b9400 !important;
@@ -403,4 +414,13 @@ hr{
 
 #facebook{
   background: #0077c8 !important;
+}
+
+
+.ico{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 20%;
+  padding-right: 20%;
 }

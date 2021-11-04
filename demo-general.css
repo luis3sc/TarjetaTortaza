@@ -14,6 +14,11 @@ h1{
 h2{
   font-size: 1.1em;
 }
+.text-t{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2em;
+}
 :root{
     --primero: yellow;
     --segundo: #200d07;
@@ -25,6 +30,7 @@ h2{
 body{
     width: 100%;
     height: 100%;
+    background-color: black;
 }
 .ama{
     background-color: var(--primero);
@@ -105,12 +111,14 @@ a{
   .siguenos{
     width: 100%;
     height: 11%;
+    position: absolute;
+    bottom: 21%;
   }
     .circle {
       position: fixed;
       right: 2%;
       /*transform: translateX(-50%);*/
-      bottom: 235px;   
+      bottom: 40%;   
       margin-bottom: 0;
       height: 50px;
       width: 50px;
@@ -238,7 +246,7 @@ a{
     }
     .fondo-ma{
       width: 100%;
-      height: 93%;
+      height: 80%;
       position: absolute;
       background-image: url(fondo.jpg);
       background-size: cover;
@@ -570,6 +578,7 @@ a{
         flex-wrap: wrap;
         column-gap: 14px;
         row-gap: 20px;
+        justify-content: center;
       }
       /* End Tab content styling*/
       /* CSS tab core */

@@ -115,7 +115,7 @@ a{
     align-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
   }
   .contenedor-ad span{
     margin-left: 10px;
@@ -403,6 +403,33 @@ a{
       box-sizing: content-box;
       background: yellow;
       border-radius: 50%;
+    }
+    .info-pago{
+      padding: 12px;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border: 1px dashed #7e7e7e;
+      gap: 10px;
+    }
+    .boton-pago{
+      width: 50%;
+      padding: 10px;
+      font-size: 1.2em;
+      color: white;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: flex-start;
+      display: flex;
+    }
+    .recojo{
+      padding-bottom: 10px;
+      border-bottom: 2px dashed #7e7e7e ;
+    }
+    .pagos{
+      display: flex;
+      gap: 10px;
     }
     #instagram{
       background-color: #833AB4;

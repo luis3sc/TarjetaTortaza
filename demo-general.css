@@ -194,7 +194,7 @@ a{
         flex-direction: column;
         justify-content: center;
         left: 0;
-        bottom: 0;
+        top: 0;
       }
       .popupsuper{
         background-color: rgb(0 0 0 / 82%);
@@ -353,6 +353,14 @@ a{
     }
     .titulo{
       height: 5%;
+    }
+    #tienda{
+      width: 100%;
+      background-color: white;
+    }
+    .tienda-items{
+      width: 100%;
+      height: 100%;
     }
     .tienda-contenido{
       height: 95%;
@@ -568,9 +576,10 @@ a{
     border-radius: 20px;
   }
   .container-wrapper {
-      position: relative;
-      width: 100%;
-    height: 95%;
+      position: absolute;
+      top: 5%;
+      width: 90%;
+    height: 90%;
       overflow: hidden;
     background-color: rgb(255, 255, 255);
   }

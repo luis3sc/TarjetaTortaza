@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -39,6 +40,10 @@ body{
 .rojo{
     background-color: var(--tercero);
     color: white;
+}
+.re{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
 }
 .regresar{
   position: absolute;
@@ -370,6 +375,7 @@ a{
     .torta{
       width: 100%;
       background:#ededed;
+      height: 160px;
       border-radius: 20px;
       display: flex;
       align-items: center;
@@ -670,4 +676,13 @@ a{
   }
   .precio{
     font-size: 3.5em;
+  }
+  .yape-flex img{
+    width: 65%;
+  }
+
+  .sorteo{
+    width: 90%;
+    height: 60%;
+    background-color: #ffffff;
   }

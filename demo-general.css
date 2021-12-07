@@ -685,6 +685,12 @@ a{
     width: 70%;
     height: 65%;
     background-color: #ffffff;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .numero{
@@ -734,4 +740,14 @@ background: -moz-linear-gradient(left, rgba(234,234,234,0) 0%, rgba(234,234,234,
 background: -webkit-linear-gradient(left, rgba(234,234,234,0) 0%,rgba(234,234,234,0.01) 1%,rgba(234,234,234,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right, rgba(234,234,234,0) 0%,rgba(234,234,234,0.01) 1%,rgba(234,234,234,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00eaeaea', endColorstr='#eaeaea',GradientType=1 ); /* IE6-9 */
+}
+.marcadores {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.marcadores img{
+  filter: grayscale(1);
 }

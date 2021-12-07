@@ -652,7 +652,11 @@
             </div>
            <p>Escanee nuestro código QR o agregue nuestro número de celular y realice el pago.</p>
            <img src="Commons_QR_code.png" alt="">
-            <div class="num">998881052</div>
+           <div class="numero">
+            <div class="num copy">998881052</div>
+            <button class="icon-copy">
+             COPIAR
+            </button></div>
            <!-- <p>Monto a pagar con Yape</p>
             <h4 class="precio" id="precioSelects" >s/ 50.00</h4>
   -->
@@ -661,8 +665,12 @@
             
             <a href="https://play.google.com/store/apps/details?id=com.bcp.innovacxion.yapeapp&hl=es" target="_blank" class="boton-contacto social arriba" id="yape-color" > Abrir Yape</a>
              </div>
+             
       </div>
-
+   
+      <div class="confirmation">
+        <span class="icon-checkmark"></span> Copied to clipboard
+      </div>
        <!-- contactar -->
        <div class="popup popupsuper pd20 " id="plin">
         <a href="#pago" class="popup__close">&times;</a>
@@ -747,6 +755,36 @@ $('#tmnSelect-cdulce').change(function(event) {
     if(op == 3) $('#precioSelectedere').html('S/ 62.00');
 }) 
   });
+</script>
+<script>
+  $(document).ready(function() {
+$('button').click(function(){
+var btntxt = $(this).text();
+
+var copy = $(this).parent().find('.copy').text();
+
+var $temp = $("<input>");
+$("body").append($temp);
+$temp.val(copy).select();
+document.execCommand("copy");
+$temp.remove();
+
+
+$('.confirmation').hide().html( 972417095 + '</b> Ha sido copiado al portapapeles').fadeIn(100).delay(800).fadeOut(200);
+
+$( '.main' ).trigger( "click" );
+});
+
+$('.main div').click(function(){
+var range = document.createRange();
+var selection = window.getSelection();
+range.selectNodeContents(this);
+selection.removeAllRanges();
+selection.addRange(range);
+});
+});
+
+
 </script>
 </body>
 </html>
